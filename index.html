@@ -1,136 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Java Kursai</title>
-    <style>
-        .header {
-            height: 250px;
-            display: flex;
-        }
-
-        .container-2 {
-            height: 600px;
-            display: flex;
-
-        }
-
-        .container-3 {
-            background-color: black;
-            height: 100px;
-        }
-
-        .main {
-            background-color: black;
-            color: white;
-
-        }
-
-        .item {
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            font-size: 100px;
-            width: 1700px;
-        }
-
-        .item2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            font-size: 100px;
-            flex-wrap: wrap;
-
-        }
-
-        .item3 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-        }
-
-        .item4 {
-            margin-left: 30px;
-            background-color: red;
-
-        }
-
-        .login {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 20px;
-            margin-right: 20px;
-        }
-        .top20 {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-
-<body class="main">
-    <header class="header">
-        <ul style="list-style: none" class="item">
-            <li><a href="blog.html"><img src="blue.jpg" height="100" width="100"></a></li>
-            <li><img src="blue.jpg" height="100" width="100"></li>
-            <li><img src="blue.jpg" height="100" width="100"></li>
-            <li><img src="blue.jpg" height="100" width="100"></li>
-
-        </ul>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
     
-    </header>
-    <main class="container-2">
-        <ul style="list-style: none" class="item2">
-            <li><img src="green.jpg" height="100" width="100">1</li>
-            <li><img src="green.jpg" height="100" width="100">2</li>
-            <li><img src="green.jpg" height="100" width="100">3</li>
-            <li><img src="green.jpg" height="100" width="100">4</li>
-            <li><img src="green.jpg" height="100" width="100">5</li>
-            <li><img src="green.jpg" height="100" width="100">6</li>
-            <li><img src="green.jpg" height="100" width="100">7</li>
-            <li><img src="green.jpg" height="100" width="100">8</li>
-        </ul>
-    </main>
-    <footer class="item3">
+    <title>Vadim Lepiochin CV</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-primary fixed-top">
+        <div>
+            <ul class="navbar-nav mr-auto d-flex flex-row">
+                <li class="nav-item mr-3"><a class="btn" href="#" role="button">About me</a></li>
+                <li class="nav-item mr-3"><a class="nav-link" href="#">Java</a></li>
+                <li class="nav-item mr-3"><a class="nav-link" href="#">JavaScript</a></li>
+                <li class="nav-item mr-3 dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Music</a>
+                        <a class="dropdown-item" href="#">TV Series</a>
+                        <a class="dropdown-item" href="#">Movie</a>
+                        <a class="dropdown-item" href="#">Anime</a>
+                      </div>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </nav>
+    <div class="mt-5">
+        <h1>AAAAAAAAAAA</h1>
+    </div>
 
-        <form>
-            <div class="login">
-                <label for="login">Login</label>
-                <input type="text" id="login">
-
-                <label for="password">Password</label>
-                <input type="password" id="password">
-                <button type="submit" margin-top=20px>Login</button>
-            </div>
-        </form>
-        <form>
-            <div class="login">
-                <label for="login2">Login</label>
-                <input type="text" id="login2">
-
-                <label for="password2">Password</label>
-                <input type="password" id="password2">
-                <button type="submit">Login</button>
-            </div>
-        </form>
-        </form>
-        <form>
-            <div class="login">
-                <label for="login3"><strong>Login</strong></label>
-                <input class="top20" type="text" id="login3">
-
-                <label class="top20" for="password3"><strong>Password</strong></label>
-                <input class="top20" type="password" id="password3">
-
-                <button class="top20" type="submit" width="20px">Login</button>
-            </div>
-        </form>
-    </footer>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
