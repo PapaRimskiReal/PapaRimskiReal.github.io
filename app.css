@@ -41,14 +41,14 @@ nav {
 
 }
 
-/* body,
+body,
 .simtas {
     height: 90%;
 }
 
 html {
     height: 100%;
-} */
+}
 
 .modal {
     color: black;
@@ -75,4 +75,15 @@ html {
 
 .moreinfo {
     border: solid;
+}
+
+.thumbnail {
+    height: 50%;
+    max-height: 400px;
+}
+
+.thumbnail img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 1px solid red;
 }
