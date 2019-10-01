@@ -6,7 +6,8 @@ a:visited {
 a:active,
 a:hover,
 .button:hover,
-.btn:hover {
+.btn:hover,
+strong {
     color: red;
     border-left-color: red;
     border-right-color: red;
@@ -34,13 +35,9 @@ nav {
     margin-top: 56px;
 
 }
-
-#top_arrow {
+#bottom_arrow{
     background-color: rgb(0, 0, 0);
-    /* margin-bottom: 56px; */
-
 }
-
 body,
 .simtas {
     height: 90%;
@@ -87,3 +84,6 @@ html {
     max-width: 100%;
     border: 1px solid red;
 }
+ .frombottom {
+     margin-bottom: 100px;
+ }
