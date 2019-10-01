@@ -7,7 +7,7 @@ a:active,
 a:hover,
 .button:hover,
 .btn:hover,
-strong {
+strong{
     color: red;
     border-left-color: red;
     border-right-color: red;
@@ -17,7 +17,6 @@ body,
 nav,
 .Dropdown,
 .dropdown-item,
-a:hover,
 .btn,
 button,
 h1{
