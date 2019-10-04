@@ -7,7 +7,7 @@ a:active,
 a:hover,
 .button:hover,
 .btn:hover,
-strong{
+strong {
     color: red;
     border-left-color: red;
     border-right-color: red;
@@ -18,7 +18,7 @@ nav,
 .Dropdown,
 .dropdown-item,
 .btn,
-button{
+button {
     background-color: rgb(0, 0, 0);
     color: white;
 
@@ -33,9 +33,11 @@ nav {
     margin-top: 50px;
 
 }
-#bottom_arrow{
+
+#bottom_arrow {
     background-color: rgb(0, 0, 0);
 }
+
 body,
 .simtas {
     height: 90%;
@@ -63,10 +65,10 @@ html {
     border-style: solid;
     border: 5px;
     border-color: rgb(255, 255, 255);
-    
+
 }
 
-.border-right{
+.border-right {
     border-color: red;
 }
 
@@ -84,30 +86,37 @@ html {
     max-width: 100%;
     border: 1px solid red;
 }
- .frombottom {
-     margin-bottom: 100px;
- }
 
- .names{
-     font-size: 1vw;
-     font-weight: bold;
-     color: black;
-     
- }
+.frombottom {
+    margin-bottom: 100px;
+}
 
- .jumbotron-1{
-     background-image: url("img/java.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     
- }
+.names {
+    font-size: 1vw;
+    font-weight: bold;
+    color: black;
 
- display-1,
- display-2,
- display-3,
- display-4,
- display-5,
- .juodastekstas{
-     color: black;
-     font-size: bold;
- }
+}
+
+.jumbotron-1 {
+    background-image: url("img/java.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-2 {
+    background-image: url("img/javascript.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+display-1,
+display-2,
+display-3,
+display-4,
+display-5,
+.juodastekstas {
+    color: black;
+    font-size: bold;
+}
