@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <script src="https://kit.fontawesome.com/346b6048fd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
@@ -20,10 +21,10 @@
   <nav class="navbar navbar-expand navbar-primary fixed-top justify-content-between">
     <div>
       <ul class="navbar-nav mr-auto d-flex flex-row ">
-        <li class="nav-item mr-3"><a class="btn" href="index.html" role="button">Home</a></li>
-        <li class="nav-item mr-3"><a class="btn" href="#" role="button">About me</a></li>
-        <li class="nav-item mr-3"><a class="btn" href="Java.html" role="button">Java</a></li>
-        <li class="nav-item mr-3"><a class="btn" href="JavaScript.html" role="button">JavaScript</a></li>
+        <li class="nav-item mr-3 linkas btn">Home</a></li>
+        <li class="nav-item mr-3 btn">About me</a></li>
+        <li class="nav-item mr-3 linkas btn">Java</a></li>
+        <li class="nav-item mr-3 linkas btn">JavaScript</a></li>
 
         <!-- Dropdown -->
         <li class="nav-item mr-3 dropdown">
@@ -32,10 +33,10 @@
             My Top of
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="Music.html">Music</a>
-            <a class="dropdown-item" href="TVSeries.html">TV Series</a>
-            <a class="dropdown-item" href="Movie.html">Movie</a>
-            <a class="dropdown-item" href="Anime.html">Anime</a>
+            <button class="linkas dropdown-item btn">Music</button>
+            <button class="linkas dropdown-item btn">TV Series</button>
+            <button class="linkas dropdown-item btn">Movie</button>
+            <button class="linkas dropdown-item btn">Anime</button>
           </div>
         </li>
       </ul>
@@ -52,63 +53,484 @@
 
   <!-- Top arrow -->
   <div class="d-flex justify-content-center align-items-center" id="top_arrow">
-    <a href="Anime.html"><i class="fas fa-angle-up fa-3x text-light"></i></a>
+    <button class="arrow"><i class="fas fa-angle-up fa-3x text-light"></i></button>
   </div>
 
-  <!-- Carousel -->
-  <div id="carouselExampleControls pb-0" class="carousel slide" data-ride="false" style="height: 75%">
+  <!-- Carousel Main-->
+  <div id="carouselMainControls pb-0" class="carousel slide frombottom h-100 " data-ride="false"
+    style="height: 75%">
     <div class="carousel-inner" style="height: 100%">
 
-      <div class="carousel-item active d-flex text-white text-center"  style="height: 100%">
+      <div class="carousel-item active d-flex text-white text-center" style="height: 100%">
         <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
           <h1>Kazkoks tekstas</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex consequatur error, natus nihil
             illo eligendi atque cumque laudantium? Quas impedit deleniti, iste sint placeat quibusdam facere
             voluptas
             repudiandae veritatis!</p>
-         
-          <!-- Introduction modal -->
-          <div class="modal fade" id="introduction_modal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Introduction</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#carouselMainControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselMainControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Carousel Java-->
+  <div id="carouselJavaControls" class="carousel slide frombottom h-100" data-ride="false">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-1 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">JAVA</h1>
+            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <hr class="my-4">
+            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-1 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">2</h1>
+            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <hr class="my-4">
+            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-1 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">3</h1>
+            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <hr class="my-4">
+            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselJavaControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselJavaControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Carousel JavaScript-->
+  <div id="carouselJSControls" class="carousel slide frombottom h-100"
+    data-ride="false">
+    <div class="carousel-inner h-100">
+
+      <!-- Carousel active item -->
+      <div class="carousel-item active h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-2 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">JavaScript</h1>
+            <p class="lead display-5 font-weight-bold">Kazkoks tekstas</p>
+            <hr class="my-4">
+            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel item -->
+      <div class="carousel-item h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-2 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">2</h1>
+            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <hr class="my-4">
+            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-2 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">3</h1>
+            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <hr class="my-4">
+            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselJSControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselJSControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Carousel Music-->
+  <div id="carouselMusicControls" class="carousel slide frombottom"
+    data-ride="false">
+    <div class="carousel-inner">
+
+      <!-- Carousel active item -->
+      <div class="carousel-item active">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <section>
+            <div class="container text-center mt-2 p-3">
+              <h1><strong>TOP Rock music</strong></h1>
+              <div class="row m-2">
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/queen.jpg" alt="" class="card-img-top">
+                    <div class="card-body m-0">
+                      <p class="names m-0">Queen</p>
+                      <p class="card-text">London, England</p>
+                      <a href="https://en.wikipedia.org/wiki/Queen_(band)" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
                 </div>
 
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/acdc.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-0">AC/DC</p>
+                      <p class="card-text">Sydney, New South Wales, Australia</p>
+                      <a href="https://en.wikipedia.org/wiki/AC/DC" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/linkinpark.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-0">Linkin Park</p>
+                      <p class="card-text">Agoura Hills, California, U.S.</p>
+                      <a href="https://en.wikipedia.org/wiki/Linkin_Park" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/soad.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-0">System of a Down</p>
+                      <p class="card-text"> Glendale, California, U.S.</p>
+                      <a href="https://en.wikipedia.org/wiki/System_of_a_Down" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/redhot.png" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                      <p class="names m-0">Red Hot Chili Peppers</p>
+                      <p class="card-text"> Los Angeles, California, U.S.</p>
+                      <a href="https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/disturbed.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-0">Disturbed</p>
+                      <p class="card-text">Chicago, Illinois, U.S.</p>
+                      <a href="https://en.wikipedia.org/wiki/Disturbed_(band)" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <section id="explore">
+            <div class="container text-center mt-2 p-3">
+              <h1><strong>TOP Hip-Hop music</strong></h1>
+              <div class="row m-2">
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/eminem.jpg" alt="" class="card-img-top">
+                    <div class="card-body m-0">
+                      <p class="names m-3">Eminem</p>
+
+                      <a href="https://en.wikipedia.org/wiki/Eminem" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/snoopdogg.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-3">Snoop Dogg</p>
+
+                      <a href="https://en.wikipedia.org/wiki/Snoop_Dogg" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/nutorious big.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-3">The Notorious B.I.G.</p>
+
+                      <a href="https://en.wikipedia.org/wiki/The_Notorious_B.I.G." class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/naughty.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names mb-3">Naughty by Nature</p>
+
+                      <a href="https://en.wikipedia.org/wiki/Naughty_by_Nature" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/gorillaz.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                      <p class="names mb-3">Gorillaz</p>
+
+                      <a href="https://en.wikipedia.org/wiki/Gorillaz" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/basta.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names mb-3">Basta</p>
+
+                      <a href="https://en.wikipedia.org/wiki/Basta_(rapper)" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/gng.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names mb-3">G&G Sindikatas</p>
+
+                      <a href="https://en.wikipedia.org/wiki/G%26G_Sindikatas" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <section id="explore">
+            <div class="container text-center mt-2 p-3">
+              <h1><strong>TOP Electronic Dance Music</strong></h1>
+              <div class="row m-2">
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/prodigy.png" alt="" class="card-img-top">
+                    <div class="card-body m-0">
+                      <p class="names m-3">The Prodigy</p>
+                      <p class="card-text">Electronica, big beat, rave, techno, breakbeat hardcore, alternative dance
+                      </p>
+                      <a href="https://en.wikipedia.org/wiki/The_Prodigy" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/atb.jpeg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-3">ATB</p>
+                      <p class="card-text">Trance, progressive house</p>
+                      <a href="https://en.wikipedia.org/wiki/ATB" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/pendulum.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names m-3">Pendulum</p>
+                      <p class="card-text">Drum and bass, electronic rock, heavy metal, alternative rock</p>
+                      <a href="https://en.wikipedia.org/wiki/Pendulum_(drum_and_bass_band)" class="btn btn-lg">More
+                        info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/daftpunk.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <p class="names mb-3">Naughty by Nature</p>
+                      <p class="card-text">House, electronic, dance, disco</p>
+                      <a href="https://en.wikipedia.org/wiki/Daft_Punk" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 p-3">
+                  <div class="card">
+                    <img src="img/gorillaz.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                      <p class="names mb-3">Aphrodite</p>
+                      <p class="card-text">Drum and bass, jungle, breakbeat hardcore</p>
+                      <a href="https://en.wikipedia.org/wiki/Aphrodite_(musician)" class="btn btn-lg">More info</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
 
         </div>
       </div>
 
       <!-- Carousel Controls -->
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselMusicControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselMusicControls" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </div>
 
-    <!-- Bottom arrow -->
-    <div class="d-flex justify-content-center align-items-center mb-5 fixed-bottom" id="bottom_arrow">
-      <a href="Java.html"><i class="fas fa-angle-down fa-3x text-light"></i></a>
-    </div>
+  <!-- Carousel TV Series-->
+  <div id="carouselTVSeriesControls" class="carousel slide frombottom"
+    data-ride="false">
+    <div class="carousel-inner">
 
-    <!-- Bottom Navbar -->
-    <nav class="navbar navbar-expand navbar-primary fixed-bottom">
-      <ul class="navbar-nav mr-auto d-flex flex-row">
+      <!-- Carousel active item -->
+      <div class="carousel-item active">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 1.</strong> Californication</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/californication.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex flex-row justify-content-around mt-0">
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Genre</strong></p>
+              <p>Comedy-drama<br>Black comedy</p>
+              <p><strong>Created by</strong></p>
+              <p>Tom Kapinos</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Executive producers</strong></p>
+              <p>David Duchovny<br>Tom Kapinos<br>Stephen Hopkins</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Starring</strong></p>
+              <p>David Duchovny<br>Natascha McElhone<br>Madeleine Martin<br>Evan Handler<br>Pamela Adlon<br>Madeline
+                Zima<br>Stephen Tobolowsky</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Seasons</strong></p>
+              <p>7</p>
+              <p><strong>Episodes</strong></p>
+              <p>84</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Release network</strong></p>
+              <p>Showtime</p>
+              <p><strong>Release date</strong></p>
+              <p>August 13, 2007 – June 29, 2014</p>
+              <p><strong>IMDB TV Series rating</strong></p>
+              <p>74</p>
+            </div>
+          </div>
 
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Californication_(TV_series)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+<<<<<<< HEAD
+      <!-- Carousel item -->
+      <div class="carousel-item ">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 2.</strong> The Sopranos</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/sopranos.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-around mt-0">
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Genre</strong></p>
+              <p>Crime drama</p>
+              <p><strong>Created by</strong></p>
+              <p>David Chase</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Executive producers</strong></p>
+              <p>David Chase<br>Brad Grey<br>Robin Green<br>Mitchell Burgess<br>Ilene S. Landress<br>Terence
+                Winter<br>Matthew Weiner</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Starring</strong></p>
+              <p>James Gandolfini<br>Lorraine Bracco<br>Edie Falco<br>Michael Imperioli<br>Dominic Chianese<br>Steven
+                Van Zandt
+                <br>Tony Sirico<br>Robert Iler<br>Jamie-Lynn Sigler</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Seasons</strong></p>
+              <p>6</p>
+              <p><strong>Episodes</strong></p>
+              <p>86</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Release network</strong></p>
+              <p>HBO</p>
+              <p><strong>Release date</strong></p>
+              <p>January 10, 1999 – June 10, 2007</p>
+              <p><strong>IMDB TV Series rating</strong></p>
+              <p>6</p>
+            </div>
+          </div>
+=======
         <!-- Introduction -->
         <li class="nav-item mr-3">
           <button type="button" class="btn mb-1" data-toggle="modal" data-target="#introduction_modal">
@@ -119,83 +541,978 @@
         <li class="nav-item mr-3">
             <button type="button" class="btn mb-1">
           <a href="https://github.com/PapaRimskiReal?tab=repositories" target="_blank">myGitHub <i class="fab fa-github"></i></a></li>
+>>>>>>> 0c5dd9c8567b86f1dcf3b2ef1ccac942d79a4e43
 
-        <!-- Email -->
-        <li class="nav-item mr-3"><button type="button" class="btn mb-1" data-toggle="modal" data-target="#Email">
-            Send me e-mail <i class="fas fa-envelope"></i>
-          </button></li>
-      </ul>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Californication_(TV_series)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
 
-    </nav>
+      <!-- Carousel item -->
+      <div class="carousel-item frombottom">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 3.</strong> House M.D.</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/House.png" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-around mt-0">
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Genre</strong></p>
+              <p>Medical drama</p>
+              <p><strong>Created by</strong></p>
+              <p> David Shore</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Executive producers</strong></p>
+              <p>Paul Attanasio<br>atie Jacobs<br>David Shore<br>Bryan Singer<br>Thomas L. Moran<br>Russel
+                Friend<br>Garrett Lerner<br>Greg Yaitanes<br>Hugh Laurie</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Starring</strong></p>
+              <p>Hugh Laurie<br>Lisa Edelstein<br>Omar Epps<br>Robert Sean Leonard<br>Jennifer Morrison<br>Jesse
+                Spencer
+                <br>Peter Jacobson<br>Kal Penn<br>Olivia Wilde<br>Amber Tamblyn<br>Odette Annable<br>Charlyne Yi</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Seasons</strong></p>
+              <p>8</p>
+              <p><strong>Episodes</strong></p>
+              <p>177</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Release network</strong></p>
+              <p>Fox</p>
+              <p><strong>Release date</strong></p>
+              <p>November 16, 2004 – May 21, 2012</p>
+              <p><strong>IMDB TV Series rating</strong></p>
+              <p>32</p>
+            </div>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/House_(TV_series)" target="_blank">
+            <button type="button" class="btn moreinfo">More info</button>
+          </a>
+        </div>
+      </div>
 
-    <!-- Navigation modal -->
-    <div class="modal fade" id="navigation_modal" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Navigation</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
 
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 4.</strong> Game of Thrones</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/got.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-around mt-0">
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Genre</strong></p>
+              <p>Fantasy<br>Drama<br>Action</p>
+              <p><strong>Created by</strong></p>
+              <p>David Benioff<br>D. B. Weiss</p>
+
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Executive producers</strong></p>
+              <p>David Benioff<br>D. B. Weiss<br>Carolyn Strauss<br>Frank Doelger<br>Bernadette Caulfield<br>Bryan
+                Cogman<br>Miguel Sapochnik<br>David Nutter</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Starring</strong></p>
+              <a href="https://www.imdb.com/title/tt0944947/fullcredits/?ref_=tt_ov_st_sm">Link to cast list</a>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Seasons</strong></p>
+              <p>8</p>
+              <p><strong>Episodes</strong></p>
+              <p>73</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Release network</strong></p>
+              <p>HBO</p>
+              <p><strong>Release date</strong></p>
+              <p> April 17, 2011 – May 19, 2019</p>
+              <p><strong>IMDB TV Series rating</strong></p>
+              <p>2</p>
+            </div>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Game_of_Thrones" target="_blank">
+            <button type="button" class="btn moreinfo">More info</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 5.</strong> Chernobyl</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/Chernobyl.jpeg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-around mt-0">
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Genre</strong></p>
+              <p>Historical drama</p>
+              <p><strong>Created by</strong></p>
+              <p>Craig Mazin</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Executive producers</strong></p>
+              <p>Craig Mazin<br>Carolyn Strauss<br>Jane Featherstone<br>Johan Renck<br>Chris Fry</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Starring</strong></p>
+              <p>Jessie Buckley <br>Jared Harris <br>Stellan Skarsgård <br>Adam Nagaitis<br>Emily Watson <br>Paul
+                Ritter
+                <br>Robert Emms<br>Sam Troughton</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Seasons</strong></p>
+              <p>6</p>
+              <p><strong>Episodes</strong></p>
+              <p>86</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start">
+              <p><strong>Release network</strong></p>
+              <p>HBO<br>Sky Atlantic</p>
+              <p><strong>Release date</strong></p>
+              <p>May 6 – June 3, 2019</p>
+              <p><strong>IMDB TV Shows rating</strong></p>
+              <p>4</p>
+            </div>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Game_of_Thrones" target="_blank">
+            <button type="button" class="btn moreinfo">More info</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#carouselTVSeriesControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselTVSeriesControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Carousel Movie-->
+  <div id="carouselMovieControls" class="carousel slide frombottom"
+    data-ride="false">
+    <div class="carousel-inner">
+
+      <!-- Carousel active item -->
+      <div class="carousel-item active">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 1.</strong> Snatch</h1>
+          </div>
+          <div class="container d-flex flex-row mb-2">
+            <div class="container d-flex">
+              <img src="img/snatch.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="container d-flex flex-column justify-content-center">
+              <div class="container d-flex justify-content-center">
+                <p><strong>Genre: </strong>Crime comedy</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Directed by: </strong>Guy Ritchie</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Produced by </strong>Matthew Vaughn</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Written by: </strong>Guy Ritchie</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Starring: </strong>Benicio del Toro, Dennis Farina, Vinnie Jones, Brad Pitt, Rade
+                  Sherbedgia,
+                  Jason Statham, Jason Flemyng</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Music by: </strong>John Murphy</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Cinematography: </strong>Tim Maurice-Jones</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Edited by: </strong>Jon Harris</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Production company: </strong>SKA Films, Matthew Vaughn Productions</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Distributed by: </strong>Screen Gems</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Release date: </strong>23 August 2000 (United Kingdom), 19 January 2001 (United States)
+                </p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Running time: </strong>102 minutes</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Budget: </strong> $10 million</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>IMDB Rating: </strong>97</p>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Snatch_(film)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 2.</strong> Terminator 2: Judgment Day</h1>
+          </div>
+          <div class="container d-flex flex-row mb-2">
+            <div class="container d-flex">
+              <img src="img/terminator2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="container d-flex flex-column justify-content-center">
+              <div class="container d-flex justify-content-center">
+                <p><strong>Genre: </strong>Science fiction, action</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Directed by: </strong>James Cameron</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Produced by </strong>James Cameron</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Written by: </strong>James Cameron</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Starring: </strong>Arnold Schwarzenegger, Linda Hamilton, Robert Patrick, Edward Furlong
+                </p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Music by: </strong>Brad Fiedel</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Cinematography: </strong>Adam Greenberg</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Edited by: </strong>Conrad Buff, Mark Goldblatt, Richard A. Harris</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Production company: </strong>Carolco Pictures, Pacific Western Productions, Lightstorm
+                  Entertainment, Le Studio Canal+ S.A.</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Distributed by: </strong>TriStar Pictures</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Release date: </strong> July 1, 1991 (Los Angeles), July 3, 1991 (United States)
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Running time: </strong>137 minutes</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Budget: </strong>$94–102 million</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>IMDB Rating: </strong>38</p>
               </div>
             </div>
           </div>
-
-    <!-- Email modal -->
-    <div class="modal fade" id="Email" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalCenterTitle">Send me e-mail</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="email">Your e-mail</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                  placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">Not necessary</small>
-              </div>
+        </div>
+      </div>
 
-              <div class="form-group">
-                <label for="formGroupExampleInput">Title</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="5"></textarea>
-              </div>
-            </form>
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 3.</strong> Lord of the rings</h1>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn">Send</button>
+          <div class="container d-flex flex-row mb-2">
+            <div class="container d-flex">
+              <img src="img/lotr.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="container d-flex flex-column justify-content-center">
+              <div class="container d-flex justify-content-center">
+                <p><strong>Genre: </strong>Fantasy, adventure</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Directed by: </strong>Peter Jackson</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Produced by </strong>Barrie M. Osborne, Peter Jackson, Fran Walsh, Tim Sanders</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Based on: </strong>The Lord of the Rings by J. R. R. Tolkien</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Starring: </strong><a
+                    href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)#Cast">link to cast
+                    list</a>
+                </p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Music by: </strong>Howard Shore</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Cinematography: </strong>Andrew Lesnie</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Edited by: </strong>John Gilbert, Michael Horton, Jamie Selkirk</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Production company: </strong>New Line Cinema, WingNut Films</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Distributed by: </strong>New Line Cinema</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Release date: </strong>19 December 2001, 18 December 2002, 17 December 2003</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Running time: </strong>558 minutes (theatrical), 686 minutes (extended)</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Budget: </strong>$281 million</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>IMDB Rating: </strong>11, 15, 7</p>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 4.</strong> Fight club</h1>
+          </div>
+          <div class="container d-flex flex-row mb-2">
+            <div class="container d-flex">
+              <img src="img/fightclub.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="container d-flex flex-column justify-content-center">
+              <div class="container d-flex justify-content-center">
+                <p><strong>Genre: </strong>Drama</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Directed by: </strong>David Fincher</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Produced by </strong>Art Linson, Ceán Chaffin, Ross Grayson Bell</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Based on: </strong>Fight Club by Chuck Palahniuk</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Starring: </strong>Brad Pitt, Edward Norton, Helena Bonham Carter, Meat Loaf Aday, Jared
+                  Leto</a>
+                </p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Music by: </strong>The Dust Brothers</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Cinematography: </strong>Jeff Cronenweth</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Edited by: </strong>James Haygood</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Production company: </strong>Fox 2000 Pictures, Regency Enterprises, Linson Films</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Distributed by: </strong>20th Century Fox</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Release date: </strong>September 10, 1999 (Venice), October 15, 1999 (United States),
+                  November 9, 1999 (Germany)</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Running time: </strong>139 minutes</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Budget: </strong>$63 million</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>IMDB Rating: </strong>10</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Fight_Club" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 5.</strong> 12 monkeys</h1>
+          </div>
+          <div class="container d-flex flex-row mb-2">
+            <div class="container d-flex">
+              <img src="img/12monkeys.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="container d-flex flex-column justify-content-center">
+              <div class="container d-flex justify-content-center">
+                <p><strong>Genre: </strong>Neo-noir, science fiction</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Directed by: </strong>Terry Gilliam</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Produced by </strong>Charles Roven</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Based on: </strong>La Jetée by Chris Marker</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Starring: </strong>Bruce Willis, Madeleine Stowe, Brad Pitt, Christopher Plummer</a>
+                </p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Music by: </strong>Paul Buckmaster</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Cinematography: </strong>Roger Pratt</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Edited by: </strong>Mick Audsley</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Production company: </strong>Atlas Entertainment, Classico</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Distributed by: </strong>Universal Pictures</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Release date: </strong>December 29, 1995</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Running time: </strong>129 minutes</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>Budget: </strong>$29.5 million</p>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <p><strong>IMDB Rating: </strong>-</p>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/12_Monkeys" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#carouselMovieControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselMovieControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Carousel Anime-->
+  <div id="carouselAnimeControls" class="carousel slide frombottom"
+    data-ride="false">
+    <div class="carousel-inner">
+
+      <!-- Carousel active item -->
+      <div class="carousel-item active">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 1.</strong> Ghost in the shell: stand alone complex</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/ghostinshell.png" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Cyberpunk</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">52</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Production I.G</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2002-10-01</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">20</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">130</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 2.</strong> Hellsing ultimate</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/hellsing.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Adventure, dark fantasy, horror</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">10</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Gonzo</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2006-02-10</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">26</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">110</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Soul_Eater_(manga)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 3.</strong> Soul eater</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/souleater.jpg" alt="" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Adventure, dark fantasy</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">51</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Bones</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2008-04-07</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">52</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">589</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Soul_Eater_(manga)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 4.</strong> Berserk</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/berserk.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Adventure, dark fantasy</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">25</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">OLM TEAM IGUCHI</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">1997-10-07</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">98</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">116</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Berserk_(1997_TV_series)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 5.</strong> Haikyuu!!</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/Haikyuu.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Comedy, sports</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">62</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Production I.G</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2014-10-06</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">8.6/10 (not enough votes)</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">55</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Haikyu!!" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 6.</strong> Samurai Champloo</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/samurai.png" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Adventure, comedy</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">26</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Manglobe</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2004-05-19</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">16</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">100</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Samurai_Champloo" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 7.</strong> Death note</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/deathnote.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Mystery, supernatural, thriller</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">37</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Madhouse</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2006-10-03</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">3</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">51</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Death_Note" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 8.</strong> One Punch Man</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/onepunchman.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Action, comedy, superhero</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">24</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Madhouse, J.C.Staff</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2015-10-05</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">47</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/One-Punch_Man" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 9.</strong> Hunter x Hunter</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/Hunter x Hunter.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Adventure, fantasy, martial arts</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">148</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Madhouse</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2011-10-02</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">5</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">3</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter_(2011_TV_series)" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item">
+        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
+          <div class="d-flex justify-content-center">
+            <h1><strong>TOP 10.</strong> No Game No Life</h1>
+          </div>
+          <div class="border d-flex" style="height: 450px">
+            <img src="img/nogamenolife.jpg" alt="" class="img-fluid" style="width: 100%">
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-end mr-1 mb-0">Genre:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Episodes:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Studio:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">Release date:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">imdb anime rating:</p>
+              <p class="d-flex justify-content-end mr-1 mb-0">myanimelist rating:</p>
+            </div>
+            <div class="d-flex flex-column justify-content-start" style="width: 50%">
+              <p class="d-flex justify-content-start ml-1 mb-0">Isekai, fantasy, science fiction</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">12</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">Madhouse</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">2014-10-09</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">8.1/10 (Not enough votes)</p>
+              <p class="d-flex justify-content-start ml-1 mb-0">196</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://en.wikipedia.org/wiki/No_Game_No_Life" target="_blank">
+              <button type="button" class="btn moreinfo">More info</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselAnimeControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselAnimeControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Bottom arrow -->
+  <div class="d-flex justify-content-center align-items-center mb-5 fixed-bottom" id="bottom_arrow">
+  <button class="arrow"><i class="fas fa-angle-down fa-3x text-light"></i></button>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  <!-- Bottom Navbar -->
+  <nav class="navbar navbar-expand navbar-primary fixed-bottom">
+    <ul class="navbar-nav mr-auto d-flex flex-row">
+
+      <!-- Introduction -->
+      <li class="nav-item mr-3">
+        <button type="button" class="btn mb-1" data-toggle="modal" data-target="#introduction_modal">
+          Introduction <i class="fas fa-book"></i>
+        </button>
+      </li>
+      <!-- Navigation -->
+      <li class="nav-item mr-3">
+        <button type="button" class="btn mb-1" data-toggle="modal" data-target="#navigation_modal">
+          Navigation <i class="fas fa-map-signs fa-1x"></i></a></li>
+
+      <!-- Email -->
+      <li class="nav-item mr-3"><button type="button" class="btn mb-1" data-toggle="modal" data-target="#Email">
+          Send me e-mail <i class="fas fa-envelope"></i>
+        </button></li>
+    </ul>
+
+  </nav>
+
+  <!-- Navigation modal -->
+  <div class="modal fade" id="navigation_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Navigation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Email modal -->
+  <div class="modal fade" id="Email" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalCenterTitle">Send me e-mail</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Your e-mail</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Not necessary</small>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroupExampleInput">Title</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="js/showItems.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
