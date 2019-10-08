@@ -36,6 +36,7 @@ nav {
 
 #bottom_arrow {
     background-color: rgb(0, 0, 0);
+   
 }
 
 body,
@@ -119,4 +120,21 @@ display-5,
 .juodastekstas {
     color: black;
     font-size: bold;
+}
+
+.hide {
+    display: none;
+  }
+
+.show {
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow {
+    border: none;
 }
