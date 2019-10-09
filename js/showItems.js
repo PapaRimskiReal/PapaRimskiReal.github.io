@@ -18,10 +18,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     hideTabContent(1);
-    console.log(carouselArray.length);
-    console.log(navButtons.lenght);
-    console.log(navBar);
-
+  
     function showTabContent(b) {
         if (carouselArray[b].classList.contains('hide')) {
             carouselArray[b].classList.remove('hide');
@@ -68,4 +65,3 @@ window.addEventListener('DOMContentLoaded', function () {
     
 
 });
-

@@ -127,7 +127,7 @@
   </div>
 
   <!-- Carousel JavaScript-->
-  <div id="carouselJSControls" class="carousel slide frombottom h-100" data-ride="false">
+  <div id="carouselJSControls" class="carousel slide frombottom h-100"  data-interval="false">
     <div class="carousel-inner h-100">
 
       <!-- Carousel active item -->
@@ -153,32 +153,32 @@
           </div>
           <div class="timer container text-white text-center d-flex flex-column justify-content-center">
             <div class="container d-flex flex-row justify-content-center" id="deadlineTimer">
-              <span>
-                <h2 class="days">0</h2>
+              <span class="text-red">day
+                <h2 class="days text-white">0</h2>
               </span>
-              <span>
+              <span><br> 
                 <h2>:</h2>
               </span>
-              <span>
-                <h2 class="hours">00</h2>
+              <span class="text-red">hour
+                <h2 class="hours text-white">00</h2>
               </span>
-              <span>
-                <h2>:</h2>
+              <span><br>
+                <h2 class="text-white">:</h2>
               </span>
-              <span>
-                <h2 class="minutes">00</h2>
+              <span class="text-red">min
+                <h2 class="minutes text-white text-center">00</h2>
               </span>
-              <span>
-                <h2>:</h2>
+              <span><br>
+                <h2 class="text-white">:</h2>
               </span>
-              <span>
-                <h2 class="seconds">00</h2>
+              <span class="text-red">sec
+                <h2 class="seconds text-white text-center">00</h2>
               </span>
-              <span class="ml-2 mr-2">
+              <span class="ml-2 mr-2"><br>
                 <h2>-</h2>
               </span>
-              <span class="deadlineName">
-                <!-- <h2 class="deadlineName"></h2> -->
+              <span><br>
+                <h2 class="deadlineName" id="deadlineName">neiseina</h2>
               </span>
             </div>
             <div class="timeBtn">
@@ -212,7 +212,7 @@
                   <label for="deadlineDate">Set Date</label>
                   <input type="text" class="form-control" id="deadlineDate" placeholder="YYYY-MM-DD">
                 </div>
-                <button type="submit" class="deadlineSubmit btn">Submit</button>
+                <button type="submit" class="deadlineSubmit btn" data-dismiss="modal">Submit</button>
               </form>
             </div>
 

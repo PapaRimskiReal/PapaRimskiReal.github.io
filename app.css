@@ -138,3 +138,6 @@ display-5,
 .arrow {
     border: none;
 }
+.text-red {
+    color: red;
+}

@@ -8,16 +8,12 @@ let Submit = document.querySelector('.deadlineSubmit');
         deadlineUserName;
 
     Submit.addEventListener('click', function () {
-        console.log('ja jibal');
-        deadlineUserName = document.querySelector('#inputDeadlineName').textContent;
-        deadlineName = document.querySelector('#deadlineName');
-        // deadlineDate = document.querySelector('#deadlineDate').textContent;
-        deadlineDate = '2019-11-18';
-        // deadlineName.textContent = deadlineUserName;
+        
+        deadlineUserName = document.getElementById('inputDeadlineName').value;
+        deadlineName = document.getElementById('deadlineName');
+        deadlineDate = document.querySelector('#deadlineDate').value;
+        deadlineName.textContent = deadlineUserName;
         setClock('deadlineTimer', deadlineDate);
-        console.log(deadlineUserName);
-        console.log(deadlineName);
-        console.log(deadlineDate);
         
     });
 
@@ -49,10 +45,16 @@ let Submit = document.querySelector('.deadlineSubmit');
         function updateClock() {
             let t = getTimeRemaining(endtime);
             timerDays.textContent = t.days;
-            timerHours.textContent = t.hours;
-            timerMinutes.textContent = t.minutes;
-            timerSeconds.textContent = t.seconds;
-
+            if (t.hours < 10){
+                timerHours.textContent = '0' + t.hours;
+            } else timerHours.textContent = t.hours;
+            if (t.minutes < 10){
+                timerMinutes.textContent = '0' + t.minutes;
+            } else timerMinutes.textContent = t.minutes;
+            if (t.seconds < 10){
+                timerSeconds.textContent = '0' + t.seconds;
+            } else timerSeconds.textContent = t.seconds;
+            
             if (t.total <= 0) {
                 clearInterval(timeInterval);
             }
