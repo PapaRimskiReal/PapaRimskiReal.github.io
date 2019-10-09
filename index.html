@@ -57,8 +57,7 @@
   </div>
 
   <!-- Carousel Main-->
-  <div id="carouselMainControls pb-0" class="carousel slide frombottom h-100 " data-ride="false"
-    style="height: 75%">
+  <div id="carouselMainControls pb-0" class="carousel slide frombottom h-100 " data-ride="false" style="height: 75%">
     <div class="carousel-inner" style="height: 100%">
 
       <div class="carousel-item active d-flex text-white text-center" style="height: 100%">
@@ -128,8 +127,7 @@
   </div>
 
   <!-- Carousel JavaScript-->
-  <div id="carouselJSControls" class="carousel slide frombottom h-100"
-    data-ride="false">
+  <div id="carouselJSControls" class="carousel slide frombottom h-100" data-ride="false">
     <div class="carousel-inner h-100">
 
       <!-- Carousel active item -->
@@ -143,6 +141,7 @@
           </div>
         </div>
       </div>
+
       <!-- Carousel item -->
       <div class="carousel-item h-100">
         <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
@@ -152,8 +151,76 @@
             <hr class="my-4">
             <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
           </div>
+          <div class="timer container text-white text-center d-flex flex-column justify-content-center">
+            <div class="container d-flex flex-row justify-content-center" id="deadlineTimer">
+              <span>
+                <h2 class="days">0</h2>
+              </span>
+              <span>
+                <h2>:</h2>
+              </span>
+              <span>
+                <h2 class="hours">00</h2>
+              </span>
+              <span>
+                <h2>:</h2>
+              </span>
+              <span>
+                <h2 class="minutes">00</h2>
+              </span>
+              <span>
+                <h2>:</h2>
+              </span>
+              <span>
+                <h2 class="seconds">00</h2>
+              </span>
+              <span class="ml-2 mr-2">
+                <h2>-</h2>
+              </span>
+              <span class="deadlineName">
+                <!-- <h2 class="deadlineName"></h2> -->
+              </span>
+            </div>
+            <div class="timeBtn">
+              <button type="button" class="btn" data-toggle="modal" data-target="#DeadlineModal">
+                Set Deadline Clock
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- deadline Modal -->
+      <div class="modal fade" id="DeadlineModal" tabindex="-1" role="dialog" aria-labelledby="Deadline input"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="DeadlineModaltitle">Set Deadline</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="inputDeadlineName">Deadline name</label>
+                  <input type="text" class="form-control" id="inputDeadlineName" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                  <label for="deadlineDate">Set Date</label>
+                  <input type="text" class="form-control" id="deadlineDate" placeholder="YYYY-MM-DD">
+                </div>
+                <button type="submit" class="deadlineSubmit btn">Submit</button>
+              </form>
+            </div>
+
+          </div>
         </div>
       </div>
+
+      <!-- Carousel item -->
       <div class="carousel-item h-100">
         <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
           <div class="jumbotron-2 border p-5 h-100">
@@ -176,8 +243,7 @@
   </div>
 
   <!-- Carousel Music-->
-  <div id="carouselMusicControls" class="carousel slide frombottom"
-    data-ride="false">
+  <div id="carouselMusicControls" class="carousel slide frombottom" data-ride="false">
     <div class="carousel-inner">
 
       <!-- Carousel active item -->
@@ -434,8 +500,7 @@
   </div>
 
   <!-- Carousel TV Series-->
-  <div id="carouselTVSeriesControls" class="carousel slide frombottom"
-    data-ride="false">
+  <div id="carouselTVSeriesControls" class="carousel slide frombottom" data-ride="false">
     <div class="carousel-inner">
 
       <!-- Carousel active item -->
@@ -693,8 +758,7 @@
   </div>
 
   <!-- Carousel Movie-->
-  <div id="carouselMovieControls" class="carousel slide frombottom"
-    data-ride="false">
+  <div id="carouselMovieControls" class="carousel slide frombottom" data-ride="false">
     <div class="carousel-inner">
 
       <!-- Carousel active item -->
@@ -1040,8 +1104,7 @@
   </div>
 
   <!-- Carousel Anime-->
-  <div id="carouselAnimeControls" class="carousel slide frombottom"
-    data-ride="false">
+  <div id="carouselAnimeControls" class="carousel slide frombottom" data-ride="false">
     <div class="carousel-inner">
 
       <!-- Carousel active item -->
@@ -1405,7 +1468,7 @@
   </div>
   <!-- Bottom arrow -->
   <div class="d-flex justify-content-center align-items-center mb-5 fixed-bottom" id="bottom_arrow">
-  <button class="arrow"><i class="fas fa-angle-down fa-3x text-light"></i></button>
+    <button class="arrow"><i class="fas fa-angle-down fa-3x text-light"></i></button>
   </div>
 
   <!-- Bottom Navbar -->
@@ -1490,6 +1553,7 @@
 
   <!-- Optional JavaScript -->
   <script src="js/showItems.js"></script>
+  <script src="js/deadline.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

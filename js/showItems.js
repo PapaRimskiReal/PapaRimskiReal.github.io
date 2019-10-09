@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
         carouselArray[index].classList.remove('show');
         carouselArray[index].classList.add('hide');
         ++index;
-        if (index > carouselArray.length-1){
+        if (index > carouselArray.length - 1) {
             index = 0;
         }
         showTabContent(index);
@@ -58,11 +58,14 @@ window.addEventListener('DOMContentLoaded', function () {
         carouselArray[index].classList.remove('show');
         carouselArray[index].classList.add('hide');
         --index;
-        if (index < 0){
-            index = carouselArray.length -1;
+        if (index < 0) {
+            index = carouselArray.length - 1;
         }
         showTabContent(index);
 
     });
 
+    
+
 });
+
