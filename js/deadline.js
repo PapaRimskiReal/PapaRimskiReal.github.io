@@ -17,6 +17,8 @@ let Submit = document.querySelector('.deadlineSubmit');
         
     });
 
+
+
     function getTimeRemaining(endtime) {
 
         let t = Date.parse(endtime) - Date.parse(new Date()),

@@ -117,7 +117,8 @@ display-2,
 display-3,
 display-4,
 display-5,
-.juodastekstas {
+.juodastekstas,
+li {
     color: black;
     font-size: bold;
 }

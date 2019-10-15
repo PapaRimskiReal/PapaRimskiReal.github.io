@@ -83,15 +83,46 @@
   </div>
 
   <!-- Carousel Java-->
-  <div id="carouselJavaControls" class="carousel slide frombottom h-100" data-ride="false">
+  <div id="carouselJavaControls" class="carousel slide frombottom" data-ride="false">
     <div class="carousel-inner h-100">
       <div class="carousel-item active h-100">
         <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
           <div class="jumbotron-1 border p-5 h-100">
             <h1 class="display-1 font-weight-bold">JAVA</h1>
-            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <p class="lead display-5 font-weight-bold">Beginners level project</p>
             <hr class="my-4">
-            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+            <p class="font-weight-bold juodastekstas">
+              <h3>Užduotis "Tankas"</h3>
+            </p>
+            <ul>
+              <li>Klasė: Tankas</li>
+              <li>Metodai: pirmyn, atgal, kairėn, dešinėn, šūvis, info</li>
+              <li>Klasės kintamieji:
+                <ul>
+                  <li>saugoti koordinates</li>
+                  <li>saugoti kryptį</li>
+                  <li>saugoti šūvių skaičių į kiekvieną kryptį</li>
+                </ul>
+              </li>
+              <li>Tankas gali judėti pirmyn (į Šiaurę), dešinėn (į Rytus), atgal (į Pietus), kairėn (į Vakarus) per
+                vieną poziciją. Pvz. „tankas pajuda kairėn“, tai reiškia jis pasisuko 90 laipsnių ir pajudėjo per vieną
+                vienetą į Vakarus.</li>
+              <li>Tankas gali šaudyti Tik ta kryptimi, į kurią jis yra pasisukęs</li>
+              <li>Metodas info() turi parodyti:
+                <ul>
+                  <li>į kurią kryptį tankas šiuo metu yra pasisukęs</li>
+                  <li>kokios yra jo koordinatės</li>
+                  <li>kiek iš viso atliko šūvių</li>
+                  <li>kiek atliko šūvių į kiekvieną kryptį atskirai</li>
+                </ul>
+              </li>
+            </ul>
+            <hr class="my-4">
+            <h5>Done in two different ways</h5>
+            <a href="https://github.com/PapaRimskiReal/uzduotys/blob/master/src/AntrasTankas/tankasNew.java"
+              target="_blank"><button class="btn">Look at code nr.1</button></a>
+            <a href="https://github.com/PapaRimskiReal/uzduotys/blob/master/src/AntrasTankas/tankas.java"
+              target="_blank"><button class="btn">Look at code nr.2</button></a>
           </div>
         </div>
       </div>
@@ -127,17 +158,20 @@
   </div>
 
   <!-- Carousel JavaScript-->
-  <div id="carouselJSControls" class="carousel slide frombottom h-100"  data-interval="false">
+  <div id="carouselJSControls" class="carousel slide frombottom h-100" data-interval="false">
     <div class="carousel-inner h-100">
 
       <!-- Carousel active item -->
       <div class="carousel-item active h-100">
         <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
           <div class="jumbotron-2 border p-5 h-100">
-            <h1 class="display-1 font-weight-bold">JavaScript</h1>
-            <p class="lead display-5 font-weight-bold">Kazkoks tekstas</p>
+            <h2 class="display-1 font-weight-bold">JavaScript</h2>
+            <p class="lead display-5 font-weight-bold">showItems script</p>
             <hr class="my-4">
-            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+            <p class="font-weight-bold juodastekstas">First added script.<br>Index.html contains seven different
+              carousels, script makes only one of them visible.</p>
+            <a href="https://github.com/PapaRimskiReal/PapaRimskiReal.github.io/blob/master/js/showItems.js"
+              target="_blank"><button class="btn">Look at script</button></a>
           </div>
         </div>
       </div>
@@ -146,17 +180,22 @@
       <div class="carousel-item h-100">
         <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
           <div class="jumbotron-2 border p-5 h-100">
-            <h1 class="display-1 font-weight-bold">2</h1>
-            <p class="lead display-5 font-weight-bold">My first and main programming language</p>
+            <h2 class="display-1 font-weight-bold">JavaScript</h2>
+            <p class="lead display-5 font-weight-bold">deadline script</p>
             <hr class="my-4">
-            <p class="font-weight-bold juodastekstas">Cia bus daug<br>visko prirasyta<br>bet kolkas nesugalvojau </p>
+            <p class="font-weight-bold juodastekstas">Second script<br>Script adds countdown timer to the date you
+              enter<br>You can add as many timers as you want</p>
+            <a href="https://github.com/PapaRimskiReal/PapaRimskiReal.github.io/blob/master/js/deadline.js"
+              target="_blank"><button class="btn">Look at script</button></a>
           </div>
+
+
           <div class="timer container text-white text-center d-flex flex-column justify-content-center">
             <div class="container d-flex flex-row justify-content-center" id="deadlineTimer">
               <span class="text-red">day
                 <h2 class="days text-white">0</h2>
               </span>
-              <span><br> 
+              <span><br>
                 <h2>:</h2>
               </span>
               <span class="text-red">hour
@@ -178,7 +217,7 @@
                 <h2>-</h2>
               </span>
               <span><br>
-                <h2 class="deadlineName" id="deadlineName">neiseina</h2>
+                <h2 class="deadlineName" id="deadlineName">title</h2>
               </span>
             </div>
             <div class="timeBtn">
@@ -188,7 +227,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- deadline Modal -->
@@ -205,7 +243,7 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="inputDeadlineName">Deadline name</label>
+                  <label for="inputDeadlineName">Title</label>
                   <input type="text" class="form-control" id="inputDeadlineName" placeholder="Enter name">
                 </div>
                 <div class="form-group">
@@ -260,7 +298,8 @@
                     <div class="card-body m-0">
                       <p class="names m-0">Queen</p>
                       <p class="card-text">London, England</p>
-                      <a href="https://en.wikipedia.org/wiki/Queen_(band)" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Queen_(band)" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -271,7 +310,7 @@
                     <div class="card-body">
                       <p class="names m-0">AC/DC</p>
                       <p class="card-text">Sydney, New South Wales, Australia</p>
-                      <a href="https://en.wikipedia.org/wiki/AC/DC" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/AC/DC" class="btn btn-lg" target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -282,7 +321,8 @@
                     <div class="card-body">
                       <p class="names m-0">Linkin Park</p>
                       <p class="card-text">Agoura Hills, California, U.S.</p>
-                      <a href="https://en.wikipedia.org/wiki/Linkin_Park" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Linkin_Park" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -293,7 +333,8 @@
                     <div class="card-body">
                       <p class="names m-0">System of a Down</p>
                       <p class="card-text"> Glendale, California, U.S.</p>
-                      <a href="https://en.wikipedia.org/wiki/System_of_a_Down" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/System_of_a_Down" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -304,7 +345,8 @@
                     <div class="card-body d-flex flex-column">
                       <p class="names m-0">Red Hot Chili Peppers</p>
                       <p class="card-text"> Los Angeles, California, U.S.</p>
-                      <a href="https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers" class="btn btn-lg"
+                        target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -315,7 +357,8 @@
                     <div class="card-body">
                       <p class="names m-0">Disturbed</p>
                       <p class="card-text">Chicago, Illinois, U.S.</p>
-                      <a href="https://en.wikipedia.org/wiki/Disturbed_(band)" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Disturbed_(band)" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -340,7 +383,7 @@
                     <div class="card-body m-0">
                       <p class="names m-3">Eminem</p>
 
-                      <a href="https://en.wikipedia.org/wiki/Eminem" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Eminem" class="btn btn-lg" target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -351,7 +394,8 @@
                     <div class="card-body">
                       <p class="names m-3">Snoop Dogg</p>
 
-                      <a href="https://en.wikipedia.org/wiki/Snoop_Dogg" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Snoop_Dogg" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -362,7 +406,8 @@
                     <div class="card-body">
                       <p class="names m-3">The Notorious B.I.G.</p>
 
-                      <a href="https://en.wikipedia.org/wiki/The_Notorious_B.I.G." class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/The_Notorious_B.I.G." class="btn btn-lg"
+                        target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -373,7 +418,8 @@
                     <div class="card-body">
                       <p class="names mb-3">Naughty by Nature</p>
 
-                      <a href="https://en.wikipedia.org/wiki/Naughty_by_Nature" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Naughty_by_Nature" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -384,7 +430,7 @@
                     <div class="card-body d-flex flex-column">
                       <p class="names mb-3">Gorillaz</p>
 
-                      <a href="https://en.wikipedia.org/wiki/Gorillaz" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Gorillaz" class="btn btn-lg" target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -395,7 +441,8 @@
                     <div class="card-body">
                       <p class="names mb-3">Basta</p>
 
-                      <a href="https://en.wikipedia.org/wiki/Basta_(rapper)" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Basta_(rapper)" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -406,7 +453,8 @@
                     <div class="card-body">
                       <p class="names mb-3">G&G Sindikatas</p>
 
-                      <a href="https://en.wikipedia.org/wiki/G%26G_Sindikatas" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/G%26G_Sindikatas" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -417,7 +465,7 @@
                     <div class="card-body">
                       <p class="names mb-3">25/17</p>
 
-                      <a href="https://ru.wikipedia.org/wiki/25/17" class="btn btn-lg">More info</a>
+                      <a href="https://ru.wikipedia.org/wiki/25/17" class="btn btn-lg" target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -444,7 +492,8 @@
                       <p class="names m-3">The Prodigy</p>
                       <p class="card-text">Electronica, big beat, rave, techno, breakbeat hardcore, alternative dance
                       </p>
-                      <a href="https://en.wikipedia.org/wiki/The_Prodigy" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/The_Prodigy" class="btn btn-lg" target="_blank">More
+                        info</a>
                     </div>
                   </div>
                 </div>
@@ -455,7 +504,7 @@
                     <div class="card-body">
                       <p class="names m-3">ATB</p>
                       <p class="card-text">Trance, progressive house</p>
-                      <a href="https://en.wikipedia.org/wiki/ATB" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/ATB" class="btn btn-lg" target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -466,7 +515,8 @@
                     <div class="card-body">
                       <p class="names m-3">Pendulum</p>
                       <p class="card-text">Drum and bass, electronic rock, heavy metal, alternative rock</p>
-                      <a href="https://en.wikipedia.org/wiki/Pendulum_(drum_and_bass_band)" class="btn btn-lg">More
+                      <a href="https://en.wikipedia.org/wiki/Pendulum_(drum_and_bass_band)" class="btn btn-lg"
+                        target="_blank">More
                         info</a>
                     </div>
                   </div>
@@ -478,7 +528,7 @@
                     <div class="card-body">
                       <p class="names mb-3">Naughty by Nature</p>
                       <p class="card-text">House, electronic, dance, disco</p>
-                      <a href="https://en.wikipedia.org/wiki/Daft_Punk" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Daft_Punk" class="btn btn-lg" target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -489,7 +539,8 @@
                     <div class="card-body d-flex flex-column">
                       <p class="names mb-3">Aphrodite</p>
                       <p class="card-text">Drum and bass, jungle, breakbeat hardcore</p>
-                      <a href="https://en.wikipedia.org/wiki/Aphrodite_(musician)" class="btn btn-lg">More info</a>
+                      <a href="https://en.wikipedia.org/wiki/Aphrodite_(musician)" class="btn btn-lg"
+                        target="_blank">More info</a>
                     </div>
                   </div>
                 </div>
@@ -688,7 +739,8 @@
             </div>
             <div class="d-flex flex-column justify-content-start">
               <p><strong>Starring</strong></p>
-              <a href="https://www.imdb.com/title/tt0944947/fullcredits/?ref_=tt_ov_st_sm">Link to cast list</a>
+              <a href="https://www.imdb.com/title/tt0944947/fullcredits/?ref_=tt_ov_st_sm" target="_blank">Link to cast
+                list</a>
             </div>
             <div class="d-flex flex-column justify-content-start">
               <p><strong>Seasons</strong></p>
