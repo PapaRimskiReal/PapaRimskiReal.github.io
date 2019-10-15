@@ -8,6 +8,10 @@ window.addEventListener('DOMContentLoaded', function () {
         navButtons = document.querySelectorAll('.linkas'),
         topArrow = document.getElementById('top_arrow'),
         bottomArrow = document.getElementById('bottom_arrow'),
+        enBtn = document.getElementsByClassName('enbtn')[0],
+        ltBtn = document.getElementsByClassName('ltbtn')[0],
+        enArray = document.querySelectorAll('.english'),
+        ltArray = document.querySelectorAll('.lithuanian'),
         index = 0;
 
     function hideTabContent(a) {
@@ -62,6 +66,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    
+    enBtn.addEventListener('click', function(){
+        for (let i = 0; 0 < enArray.length; i++){
+            enArray[i].classList.add('show');
+            ltArray[i].classList.remove('show');
+            enArray[i].classList.remove('hide');
+            ltArray[i].classList.add('hide');
+        }
+
+    });
+
+    ltBtn.addEventListener('click', function(){
+        for (let i = 0; 0 < ltArray.length; i++){
+            ltArray[i].classList.add('show');
+            enArray[i].classList.remove('show');
+            ltArray[i].classList.remove('hide');
+            enArray[i].classList.add('hide');
+        }
+
+    });
 
 });
