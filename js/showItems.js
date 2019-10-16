@@ -12,6 +12,8 @@ window.addEventListener('DOMContentLoaded', function () {
         ltBtn = document.getElementsByClassName('ltbtn')[0],
         enArray = document.querySelectorAll('.english'),
         ltArray = document.querySelectorAll('.lithuanian'),
+        aboutmeBtn = document.querySelector('.aboutme'),
+        homeBtn = document.querySelector('.homebtn'),
         index = 0;
 
     function hideTabContent(a) {
@@ -84,6 +86,24 @@ window.addEventListener('DOMContentLoaded', function () {
             enArray[i].classList.add('hide');
         }
 
+    });
+
+    aboutmeBtn.addEventListener('click', function(){
+        for (let i = 1; i < carouselArray.length; i++) {
+            carouselArray[i].classList.remove('show');
+            carouselArray[i].classList.add('hide');
+        }
+        carouselArray[0].classList.remove('hide');
+        carouselArray[0].classList.add('show');
+    });
+
+    homeBtn.addEventListener('click', function(){
+        for (let i = 1; i < carouselArray.length; i++) {
+            carouselArray[i].classList.remove('show');
+            carouselArray[i].classList.add('hide');
+        }
+        carouselArray[0].classList.remove('hide');
+        carouselArray[0].classList.add('show');
     });
 
 });
