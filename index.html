@@ -21,10 +21,10 @@
   <nav class="navbar navbar-expand navbar-primary fixed-top justify-content-between">
     <div>
       <ul class="navbar-nav mr-auto d-flex flex-row ">
-        <li class="nav-item mr-3 linkas btn">Home</a></li>
-        <li class="nav-item mr-3 btn">About me</a></li>
-        <li class="nav-item mr-3 linkas btn">Java</a></li>
-        <li class="nav-item mr-3 linkas btn">JavaScript</a></li>
+        <li class="nav-item mr-3 linkas btn">Home</li>
+        <li class="nav-item mr-3 btn aboutme">About me</li>
+        <li class="nav-item mr-3 linkas btn">Java</li>
+        <li class="nav-item mr-3 linkas btn">JavaScript</li>
 
         <!-- Dropdown -->
         <li class="nav-item mr-3 dropdown">
@@ -43,12 +43,12 @@
     </div>
 
     <!-- Search -->
-    <div>
+    <!-- <div>
       <form class="form-inline my-2 my-lg-0 d-flex">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn my-2 my-sm-0" type="submit">Search</button>
       </form>
-    </div>
+    </div> -->
   </nav>
 
   <!-- Top arrow -->
@@ -57,16 +57,38 @@
   </div>
 
   <!-- Carousel Main-->
-  <div id="carouselMainControls pb-0" class="carousel slide frombottom h-100 " data-ride="false" style="height: 75%">
-    <div class="carousel-inner" style="height: 100%">
+  <div id="carouselMainControls" class="carousel slide frombottom" data-ride="false">
+    <div class="carousel-inner h-100">
 
-      <div class="carousel-item active d-flex text-white text-center" style="height: 100%">
-        <div class="container text-white text-center d-flex flex-column justify-content-center pb-0">
-          <h1>Kazkoks tekstas</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex consequatur error, natus nihil
-            illo eligendi atque cumque laudantium? Quas impedit deleniti, iste sint placeat quibusdam facere
-            voluptas
-            repudiandae veritatis!</p>
+      <!-- Carousel active item -->
+      <div class="carousel-item active h-100">
+        <div class="container text-white text-left d-flex flex-column justify-content-center h-100">
+          <h1 class="pb-0 mb-0">Vadim Lepiochin CV</h1>
+          <p class="mt-0 pt-0" style="color: red;">This is a CV and a small presentation of my programming skills.</p>
+          <h3>Introduction:</h3>
+          <p>Press the Up and Down Arrow keys to navigate through themes (you can also use the upper buttons), and the
+            right and left arrows to navigate through theme sections.</p>
+          <h3>Themes:</h3>
+          <h5 class="pb-0 mb-0">1. Java</h5>
+          <p class="mt-0 pt-0" style="color: red;">Each chapter has a project written in java. Use the "Lithuanian" and
+            "English" buttons at the bottom to change the language of the problem.</p>
+          <h5 class="pb-0 mb-0">2. JavaScript</h5>
+          <p class="mt-0 pt-0" style="color: red;">The section lists the scripts used on the page.</p>
+          <h5 class="pb-0 mb-0">3. My Top of</h5>
+          <p class="mt-0 pt-0" style="color: red;">Just listed my favorite movies, series, music and anime.</p>
+          <h5 class="pb-0 mb-0">4. Home page</h5>
+          <p class="mt-0 pt-0" style="color: red;">It consists of two chapters. In one you are now, in the second
+            described information about me.</p>
+
+        </div>
+      </div>
+
+      <!-- Carousel item -->
+      <div class="carousel-item h-100" id="aboutme">
+        <div class="container text-white text-left d-flex flex-column justify-content-center h-100">
+          <h1>About me</h1>
+
+
         </div>
       </div>
 
@@ -85,6 +107,8 @@
   <!-- Carousel Java-->
   <div id="carouselJavaControls" class="carousel slide frombottom" data-ride="false">
     <div class="carousel-inner h-100">
+
+      <!-- Carousel active item -->
       <div class="carousel-item active h-100">
         <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
           <div class="jumbotron-1 border p-5 h-100">
@@ -342,7 +366,7 @@
                   <li>When an error occurs, clear error messages are displayed</li>
                 </ul>
               </li>
-     
+
               <hr class="my-4">
               <a href="https://github.com/PapaRimskiReal/AntrasProjektas/tree/master/src/main/java/CodeAcademy/AntrasProjektas"
                 target="_blank"><button class="btn ml-2">Look project</button></a>
@@ -353,70 +377,74 @@
 
       <!-- Carousel item -->
       <div class="carousel-item">
-          <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
-            <div class="jumbotron-1 border p-5 h-100">
-              <h1 class="display-1 font-weight-bold">JAVA</h1>
-              <p class="lead display-5 font-weight-bold">Advanced level project (DataBase)</p>
+        <div class="container text-white text-left d-flex flex-column justify-content-center pb-0 h-100">
+          <div class="jumbotron-1 border p-5 h-100">
+            <h1 class="display-1 font-weight-bold">JAVA</h1>
+            <p class="lead display-5 font-weight-bold">Advanced level project (DataBase)</p>
+            <hr class="my-4">
+            <div class="container lithuanian hide">
+              <h3>Egzaminavimų programa</h3>
+              <li>Programa turi galėti pateikti klausimus.</li>
+              <li>Prieš pateikiant klausimus programa turi paklausti kas sprendžia egzaminą</li>
+              <li>Kiekvienas klausimas turi turėti 3 atsakymo variantus.</li>
+              <li>Atsakymai turi būti priimami iš UI (User Interface) ir skaičiuojami prie bendro rezultato</li>
+              <li>Programa turi turėti galimybę sukurti naujus klausimus ir atsakymų variantus kiekvienam klausimui.
+              </li>
+              <li>Nebūtina funkcija: kurti naujus klausimus turėtų būti galima tik suvedus administratoriaus slaptažodį.
+              </li>
+              <li>Programa turi turėti galimybę redaguoti esamus klausimus</li>
+              <li>Nebūtina funkcija: modifikuoti klausimus turėtų būti galima tik suvedus slaptažodį</li>
+              <li>Turi būti galimybė pažiūrėti sekančias statistikas:
+                <ul>
+                  <li>Kiek kartų egzaminai buvo spręsti</li>
+                  <li>Teisingų atsakymų skaičius: viso, kiekviename klausimyne, vidurkis</li>
+                  <li>Kiek yra skirtingų atsakymo variantų pasirinkta (kiek buvo pasirinkta A, kiek B, kiek C)</li>
+                </ul>
+              </li>
+              <li>Programa turi turėti galimybę būti išsijungti baigus darbą.</li>
+              <li>Visa statistika turi būti išsaugota duomenų bazėje</li>
+              <li>Panaudoti visas CRUD operacijas (Create, Read, Update and Delete).</li>
+              <li>Panaudoti ORM framework'ą</li>
+              <li>Jei egzistuoja slaptažodis manipuliuoti klausimams - jį duomenų bazėje saugoti užšifruotą</li>
+
+
               <hr class="my-4">
-              <div class="container lithuanian hide">
-                <h3>Egzaminavimų programa</h3>
-                <li>Programa turi galėti pateikti klausimus.</li>
-                <li>Prieš pateikiant klausimus programa turi paklausti kas sprendžia egzaminą</li>
-                <li>Kiekvienas klausimas turi turėti 3 atsakymo variantus.</li>
-                <li>Atsakymai turi būti priimami iš UI (User Interface) ir skaičiuojami prie bendro rezultato</li>
-                <li>Programa turi turėti galimybę sukurti naujus klausimus ir atsakymų variantus kiekvienam klausimui.</li>
-                <li>Nebūtina funkcija: kurti naujus klausimus turėtų būti galima tik suvedus administratoriaus slaptažodį.</li>
-                <li>Programa turi turėti galimybę redaguoti esamus klausimus</li>
-                <li>Nebūtina funkcija: modifikuoti klausimus turėtų būti galima tik suvedus slaptažodį</li>
-                <li>Turi būti galimybė pažiūrėti sekančias statistikas:
-                  <ul>
-                    <li>Kiek kartų egzaminai buvo spręsti</li>
-                    <li>Teisingų atsakymų skaičius: viso, kiekviename klausimyne, vidurkis</li>
-                    <li>Kiek yra skirtingų atsakymo variantų pasirinkta (kiek buvo pasirinkta A, kiek B, kiek C)</li>
-                  </ul>
-                </li>
-                <li>Programa turi turėti galimybę būti išsijungti baigus darbą.</li>
-                <li>Visa statistika turi būti išsaugota duomenų bazėje</li>
-                <li>Panaudoti visas CRUD operacijas (Create, Read, Update and Delete).</li>
-                <li>Panaudoti ORM framework'ą</li>
-                <li>Jei egzistuoja slaptažodis manipuliuoti klausimams - jį duomenų bazėje saugoti užšifruotą</li>
-                
-  
-                <hr class="my-4">
-                <a href="https://github.com/PapaRimskiReal/DB/tree/master/src/main/java/codeAcademyVadim/DB"
-                  target="_blank"><button class="btn ml-2">Peržiuret projektą</button></a>
-              </div>
-  
-              <div class="container english show">
-                <h3>Examination program</h3>
-                <li>The program must be able to ask questions.</li>
-                <li>Before asking questions, the program must ask who decides the exam</li>
-                <li>Each question must have 3 answer options.</li>
-                <li>Responses must be received from a UI (User Interface) and counted against the total score</li>
-                <li>The program must be able to create new questions and answer options for each question.</li>
-                <li>Optional feature: Creating new questions should only be possible after entering the administrator password.</li>
-                <li>The program must be able to edit existing issues</li>
-                <li>Optional feature: Modifying questions should only be possible after entering a password</li>
-                <li>It must be possible to view the following statistics:
-                  <ul>
-                    <li>The number of times exams were addressed</li>
-                    <li>Number of correct answers: total, each questionnaire, the average</li>
-                    <li>How many different answer options are selected (how many were chosen, how much was B, how much was C)</li>
-                  </ul>
-                </li>
-                <li>The program must be capable of being shut down after completion.</li>
-                <li>All statistics must be stored in the database</li>
-                <li>Apply all CRUD operations (Create, Read, Update and Delete).</li>
-                <li>Use the ORM framework</li>
-                <li>If there is a password to manipulate questions - keep it encrypted in the database</li>
-                       
-                <hr class="my-4">
-                <a href="https://github.com/PapaRimskiReal/DB/tree/master/src/main/java/codeAcademyVadim/DB"
-                  target="_blank"><button class="btn ml-2">Look project</button></a>
-              </div>
+              <a href="https://github.com/PapaRimskiReal/DB/tree/master/src/main/java/codeAcademyVadim/DB"
+                target="_blank"><button class="btn ml-2">Peržiuret projektą</button></a>
+            </div>
+
+            <div class="container english show">
+              <h3>Examination program</h3>
+              <li>The program must be able to ask questions.</li>
+              <li>Before asking questions, the program must ask who decides the exam</li>
+              <li>Each question must have 3 answer options.</li>
+              <li>Responses must be received from a UI (User Interface) and counted against the total score</li>
+              <li>The program must be able to create new questions and answer options for each question.</li>
+              <li>Optional feature: Creating new questions should only be possible after entering the administrator
+                password.</li>
+              <li>The program must be able to edit existing issues</li>
+              <li>Optional feature: Modifying questions should only be possible after entering a password</li>
+              <li>It must be possible to view the following statistics:
+                <ul>
+                  <li>The number of times exams were addressed</li>
+                  <li>Number of correct answers: total, each questionnaire, the average</li>
+                  <li>How many different answer options are selected (how many were chosen, how much was B, how much was
+                    C)</li>
+                </ul>
+              </li>
+              <li>The program must be capable of being shut down after completion.</li>
+              <li>All statistics must be stored in the database</li>
+              <li>Apply all CRUD operations (Create, Read, Update and Delete).</li>
+              <li>Use the ORM framework</li>
+              <li>If there is a password to manipulate questions - keep it encrypted in the database</li>
+
+              <hr class="my-4">
+              <a href="https://github.com/PapaRimskiReal/DB/tree/master/src/main/java/codeAcademyVadim/DB"
+                target="_blank"><button class="btn ml-2">Look project</button></a>
             </div>
           </div>
         </div>
+      </div>
     </div>
 
     <a class="carousel-control-prev" href="#carouselJavaControls" role="button" data-slide="prev">
@@ -1813,14 +1841,14 @@
 
       <!-- Introduction -->
       <li class="nav-item mr-3">
-        <button type="button" class="btn mb-1" data-toggle="modal" data-target="#introduction_modal">
-          Introduction <i class="fas fa-book"></i>
-        </button>
+        <a href=""><button type="button" class="btn mb-1">
+            myGitHub <i class="fab fa-github"></i></button></a>
       </li>
       <!-- Navigation -->
       <li class="nav-item mr-3">
-        <button type="button" class="btn mb-1" data-toggle="modal" data-target="#navigation_modal">
-          Navigation <i class="fas fa-map-signs fa-1x"></i></a></li>
+        <a href=""><button type="button" class="btn mb-1">
+            myLinkedin <i class="fab fa-linkedin"></i></button></a>
+      </li>
 
       <!-- Email -->
       <li class="nav-item mr-3"><button type="button" class="btn mb-1" data-toggle="modal" data-target="#Email">
@@ -1834,25 +1862,6 @@
     </ul>
 
   </nav>
-
-  <!-- Navigation modal -->
-  <div class="modal fade" id="navigation_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Navigation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- Email modal -->
   <div class="modal fade" id="Email" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
