@@ -106,11 +106,18 @@ html {
 }
 
 .jumbotron-2 {
+    background-image: url("img/C.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.jumbotron-3 {
     background-image: url("img/javascript.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
 }
+
 
 display-1,
 display-2,
